@@ -117,7 +117,7 @@ library(tidyverse)
 library(dplyr)
 ```
 
-# Importing the data
+## Working with data
 
 Now we need some data to work with. There is a file on your computer called nebraska_deaths.csv
 
@@ -156,6 +156,8 @@ nebraska_deaths <- nebraska_deaths %>%
   mutate(county = toupper(county))
 
 ```
+
+## Basic data analysis
 
 Now we can ask the data some questions. First, I'd like to find the statewide autopsy rate. For that, we'll need to know how many deaths ocurred, and how many were autopsied. 
 
@@ -203,6 +205,7 @@ county_totals %>%
   arrange(desc(percent_autopsied))
 
 ```
+## Asking the data specific questions
 
 Now we can use the data to find the autopsy rate of a specific population. The central character of our story, Pete, was a 56 year old man living in Douglas County. For the story, I wanted to find out how likely Pete was to be autopsied based on those characteristics.
 
